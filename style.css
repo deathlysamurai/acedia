@@ -199,3 +199,114 @@ section {
         margin: 0;
     }
 }
+
+.contact-form {
+    max-width: 600px;
+    margin: 2rem auto 0;
+    text-align: left;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+  }
+  
+  .form-group {
+    margin-bottom: 1.25rem;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: white;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border-radius: 6px;
+    border: none;
+    font-size: 1rem;
+  }
+  
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+    outline: 2px solid var(--accent-green);
+  }
+  
+  .checkbox-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    color: white;
+    font-size: 1rem;
+  }
+  
+  .checkbox-group input[type="checkbox"] {
+    margin-right: 0.5rem;
+    width: 18px;
+    height: 18px;
+    accent-color: var(--accent-green); /* modern browsers support this! */
+  }
+  
+  .contact-form button {
+    background-color: var(--accent-green);
+    color: #012e45;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-form button:hover {
+    background-color: #4ac779;
+  }
+  
+  .help-text {
+    margin-top: 1.5rem;
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .form-message {
+    position: relative;
+    margin: 1.5rem 0 2rem; /* adds space above and below */
+    padding: 1rem 2.5rem 1rem 1rem;
+    border-radius: 6px;
+    font-weight: bold;
+    text-align: left;
+    font-size: 1rem;
+  }
+  
+  .form-message.success {
+    background-color: #e0f8ed;
+    color: #177d47;
+    border: 1px solid #5ddd87;
+  }
+  
+  .form-message.error {
+    background-color: #ffe8e8;
+    color: #a81919;
+    border: 1px solid #f55;
+  }
+  
+  .close-btn {
+    position: absolute;
+    right: 12px;
+    top: 8px;
+    font-size: 1.2rem;
+    color: inherit;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-weight: normal;
+  }
+
+  .close-btn:hover {
+    opacity: 0.6;
+  }
